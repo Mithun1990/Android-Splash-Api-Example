@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Android12SplashScreen" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+
+    <style name="Theme.Starting" parent="Theme.SplashScreen">//Theme for splash
+        <item name="windowSplashScreenBackground">#ffffff</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_amiprobshi_l_200</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="windowSplashScreenIconBackgroundColor">#ff0000</item>
+        // Set the theme of the Activity that directly follows your splash screen.
+        <item name="postSplashScreenTheme">@style/Theme.Android12SplashScreen</item>
+        //Theme for other activities except splash
+        # Required.
+    </style>
+    //This code need to be used is splash icon vector
+    // if the icon crops because of android splash behaviour
+    // use the group code block and replace the path with existing vector path
+    <!--    <group android:pivotX="100"
+            android:pivotY="100"
+            android:scaleX="0.5"
+            android:scaleY="0.5">
+          <path></path>
+            </group> -->
+    </resources>
